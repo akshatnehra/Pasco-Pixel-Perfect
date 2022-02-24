@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 32px;
+  background-color: #191919;
+}
+header .header-components-container {
+  width: 936px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 300px;
+  color: white;
+}
+header .header-components-container .left-icon-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .header-components-container .left-icon-container img {
+  height: 12px;
+  margin-right: 9.6px;
+}
+header .header-components-container .right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 600;
+  color: #6d6c6d;
+  letter-spacing: 0.5px;
+  margin-top: 11px;
+  position: absolute;
+  right: 292.8px;
+}
+header .header-components-container .right-container img {
+  margin-right: 5.6px;
+}
+header .header-components-container .right-container .small-img {
+  height: 12.8px;
+}
+header .header-components-container .right-container #arrow-down {
+  margin-left: 3px;
+}
+header .header-components-container .right-container #symbol {
+  margin-left: 11.2px;
+  margin-right: 11.2px;
+  height: 16px;
+  width: 0.8px;
+  background-color: #545454;
+}
+header .header-components-container .right-container .sign-in-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .header-components-container .right-container .language-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.body-container .background-image {
+  position: absolute;
+  z-index: -1;
+  opacity: 90%;
+  filter: brightness(40%);
+}
+.body-container #bg {
+  width: 100vw;
+  max-height: 95vh;
+}
+.body-container .left-button {
+  position: absolute;
+  left: 33.6px;
+  top: 298.4px;
+}
+.body-container .left-button img {
+  height: 17.6px;
+}
+.body-container .right-button {
+  position: absolute;
+  top: 298.4px;
+  right: 33.6px;
+}
+.body-container .right-button img {
+  height: 17.6px;
+}
+.body-container .nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 936px;
+  justify-content: flex-start;
+  color: #ffffff;
+  margin-top: 12.8px;
+  margin-bottom: 186.4px;
+}
+.body-container .nav-container .site-name {
+  font-size: 19.2px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.body-container .nav-container .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.6px;
+  margin-left: 98.4px;
+}
+.body-container .nav-container .nav .nav-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 11.2px;
+  font-weight: 600;
+}
+.body-container .nav-container .nav .nav-option .title {
+  margin-right: 8.8px;
+}
+.body-container .nav-container .more-options-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5px;
+  margin-left: 45.6px;
+}
+.body-container .nav-container .more-options-container img {
+  margin-right: 10.4px;
+  height: 15px;
+}
+.body-container .nav-container .more-options-container .line {
+  margin-right: 10.4px;
+  width: 0.8px;
+  height: 24px;
+  background-color: #5c5c5b;
+}
+.body-container .underline {
+  width: 64px;
+  height: 3.2px;
+  top: 52.8px;
+  left: 461.6px;
+  background-color: #ff3f81;
+  position: absolute;
+}
+.body-container .other-body {
+  text-align: center;
+}
+.body-container .other-body .sub-heading {
+  color: #bdbdbd;
+  height: 11.2px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+}
+.body-container .other-body .heading {
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-left: 6px;
+}
+.body-container .other-body button {
+  margin-top: 28px;
+  padding: 9.6px 22.4px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: #2e3e9c;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+.body-container .other-body .user-img {
+  margin-top: 64px;
+  height: 40.8px;
+}
+.body-container .other-body .username {
+  margin-top: 8px;
+  color: #dbdbdb;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-bottom: 7.2px;
+}
+.body-container .other-body .date-time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #6d6c6d;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
+}
+.body-container .other-body .date-time-container .date {
+  margin-right: 8px;
+}
+.body-container .other-body .comment-like-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #6d6c6d;
+  letter-spacing: 0.5px;
+}
+.body-container .other-body .comment-like-container img {
+  height: 10.4px;
+}
+.body-container .other-body .comment-like-container .comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 22.4px;
+}
+.body-container .other-body .comment-like-container .comment-container img {
+  margin-right: 5.6px;
+}
+.body-container .other-body .comment-like-container .like-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.body-container .other-body .comment-like-container .like-container img {
+  height: 10px;
+  margin-right: 3.2px;
+}/*# sourceMappingURL=styles.css.map */

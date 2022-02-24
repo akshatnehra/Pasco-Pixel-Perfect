@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@mixin font-size($size) {
+  font-size: $size/1.25;
+}
+
+@mixin height($height) {
+  height: $height/1.25;
+}
+
+@mixin width($width) {
+  width: $width/1.25;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  @include height(40px);
+  background-color: #191919;
+
+  .header-components-container {
+    @include width(1170px);
+    @include flex(row);
+    justify-content: space-between;
+    margin-left: calc(375px/1.25);
+    color: white;
+
+    .left-icon-container {
+      margin-top: 10px;
+      @include flex(row);
+
+      img{
+        @include height(15px);
+        margin-right: calc(12px/1.25);
+      }
+    }
+
+    .right-container {
+      @include flex(row);
+      font-size: 9px;
+      font-weight: 600;
+      color: #6d6c6d;
+      letter-spacing: 0.5px;
+      margin-top: 11px;
+      position: absolute;
+      right: calc(366px/1.25);
+
+      img{
+        margin-right: calc(7px/1.25);
+      }
+
+      .small-img{
+        @include height(16px);
+      }
+
+      #arrow-down{
+        // @include width(10px);
+        margin-left: 3px;
+      }
+
+      #symbol{
+        margin-left: calc(14px/1.25);
+        margin-right: calc(14px/1.25);
+        @include height(20px);
+        @include width(1px);
+        background-color: #545454;
+      }
+
+      .sign-in-container{
+        @include flex(row);
+      }
+      .language-select{
+        @include flex(row);
+      }
+    }
+  }
+}
+
+.body-container {
+  @include flex(column);
+  justify-content: flex-start;
+  position: relative;
+
+  .background-image {
+    position: absolute;
+    z-index: -1;
+    // opacity: 100%;
+    // filter: brightness(28%);
+    opacity: 90%;
+  filter: brightness(40%);
+  }
+
+  #bg{
+    width: 100vw;
+    max-height: 95vh;
+  }
+
+  .left-button {
+    position: absolute;
+    left: calc(42px / 1.25);
+    top: calc(373px / 1.25);
+
+    img {
+      @include height(22px);
+    }
+  }
+
+  .right-button {
+    position: absolute;
+    top: calc(373px / 1.25);
+    right: calc(42px / 1.25);
+
+    img {
+      @include height(22px);
+    }
+  }
+
+  .nav-container {
+    @include flex(row);
+    @include width(1170px);
+    justify-content: flex-start;
+    color: #ffffff;
+    margin-top: calc(16px / 1.25);
+    margin-bottom: calc(233px / 1.25);
+
+    .site-name {
+      @include font-size(24px);
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .nav {
+      @include flex(row);
+      margin-top: calc(7px / 1.25);
+      margin-left: calc(123px / 1.25);
+
+      .nav-option {
+        @include flex(row);
+        margin-right: calc(25px / 1.25);
+        @include font-size(14px);
+        font-weight: 600;
+
+        .title {
+          margin-right: calc(11px / 1.25);
+        }
+      }
+    }
+    .more-options-container {
+      @include flex(row);
+      margin-top: 2.5px;
+      margin-left: calc(57px / 1.25);
+      img {
+        margin-right: calc(13px / 1.25);
+        height: 15px;
+      }
+      .line {
+        margin-right: calc(13px / 1.25);
+        @include width(1px);
+        @include height(30px);
+        background-color: #5c5c5b;
+      }
+    }
+  }
+
+  .underline {
+    @include width(80px);
+    @include height(4px);
+    top: calc(66px / 1.25);
+    left: calc(577px / 1.25);
+    background-color: #ff3f81;
+    position: absolute;
+  }
+
+  .other-body {
+    text-align: center;
+
+    .sub-heading {
+      color: #bdbdbd;
+      @include height(14px);
+      font-weight: 600;
+      margin-bottom: calc(25px / 1.25);
+      letter-spacing: 0.2px;
+    }
+
+    .heading {
+      color: #ffffff;
+      // @include height(30px);
+      @include font-size(40px);
+      letter-spacing: 2px;
+      font-weight: 800;
+      margin-left: 6px;
+    }
+
+    button {
+      margin-top: calc(35px / 1.25);
+      padding: calc(12px / 1.25) calc(28px / 1.25);
+      border-style: none;
+      border-radius: 22px;
+      background-color: #2e3e9c;
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .user-img {
+      margin-top: calc(80px / 1.25);
+      @include height(51px);
+    }
+
+    .username {
+      margin-top: calc(10px / 1.25);
+      color: #dbdbdb;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      margin-bottom: calc(9px / 1.25);
+    }
+
+    .date-time-container {
+      @include flex(row);
+      font-size: 9.5px;
+      font-weight: 600;
+      color: #6d6c6d;
+      letter-spacing: 0.5px;
+      margin-bottom: calc(35px / 1.25);
+
+      .date {
+        margin-right: calc(10px / 1.25);
+      }
+    }
+
+    .comment-like-container {
+      @include flex(row);
+      font-size: 9.5px;
+      font-weight: 600;
+      color: #6d6c6d;
+      letter-spacing: 0.5px;
+
+      img {
+        @include height(13px);
+      }
+
+      .comment-container {
+        @include flex(row);
+        margin-right: calc(28px / 1.25);
+        img {
+          margin-right: calc(7px / 1.25);
+        }
+      }
+
+      .like-container {
+        @include flex(row);
+        img {
+          @include height(12.5px);
+          margin-right: calc(4px / 1.25);
+        }
+      }
+    }
+  }
+}
